@@ -47,8 +47,8 @@ section#celular{
 
 
 section#redes-sociais img{
-text-align: left;   
-display: block;
+display: flex;
+flex-direction: column;
 width: 50px;
 max-width: 100%;
 height: auto;
@@ -62,5 +62,13 @@ section#redes-sociais img:hover{
     transform:translate(-3px, -3px);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.604);
     transition: transform 0.3s;
+}
+
+@media screen and (max-width:768px) {
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
 
