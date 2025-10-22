@@ -17,12 +17,13 @@ body{
 }
 
 main{
+    display: flex;
     height: 100vh;
     position: relative;
 }
 
 section#celular{
-    width: 90vw;
+     width: 90vw;
     max-width: 311px;
     height: auto;
     aspect-ratio: 311 / 627;
@@ -34,6 +35,7 @@ section#celular{
     background-image: url(./imagens/frame-iphone.png);
     background-repeat: no-repeat;
     background-position: center
+  
 }
 
 #home{
@@ -64,14 +66,16 @@ section#redes-sociais img:hover{
     transition: transform 0.3s;
 }
 
-@media screen and (max-width:768px) {
-    section{
-        display: flex;
-        flex-direction: column;
-    }
+@media screen and (max-width:568px) {
     section#celular{
-        display: flex;
-        justify-content: end;
+    max-width: 311px;
+    height: auto;
+    aspect-ratio: 311 / 627;
+    position: absolute;
+    background-size: contain;
+    background-image: url(./imagens/frame-iphone.png);
+    background-repeat: no-repeat;
+    background-position: center
     }
     
 }
