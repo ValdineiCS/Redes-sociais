@@ -69,6 +69,10 @@ section#redes-sociais img:hover{
         display: flex;
         flex-direction: column;
     }
+    section#celular{
+        display: flex;
+        justify-content: end;
+    }
     
 }
 
